@@ -14,7 +14,7 @@ namespace EFEstante.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    nomeAutor = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    NomeAutor = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -4,13 +4,23 @@ using EFEstante.Models;
 
 using DBEstante context = new DBEstante();
 
-Livro joaoLindao = new Livro()
+
+
+Autor Pedro = new Autor()
 {
-    ISBN = 9726629055,
-    nomeLivro = "O João Lindão",
-    IDAutor = 3,
-    precoLivro = 13.50M
+    NomeAutor = "Pedro"
 };
-context.Livros.Add(joaoLindao);
+
+Livro oParaiso = new Livro()
+{
+    ISBN = 925868656,
+    nomeLivro = "O Paraiso",
+    precoLivro = (decimal)25.99,
+    IDAutor = Pedro
+
+};
+
+context.Add(Pedro);
+context.Add(oParaiso);
 
 context.SaveChanges();

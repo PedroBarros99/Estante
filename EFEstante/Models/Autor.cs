@@ -13,6 +13,6 @@ namespace EFEstante.Models
         public int ID { get; set; }
 
         [Required]
-        public string nomeAutor{ get; set; } = null!;
+        public string NomeAutor{ get; set; } = null!;
     }
 }

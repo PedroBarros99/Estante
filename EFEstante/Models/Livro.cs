@@ -16,13 +16,13 @@ namespace EFEstante.Models
         public int ID { get; set; }
 
         [Required]
-        public long ISBN { get; set; }
+        public int ISBN { get; set; }
         
         [Required]
         public string nomeLivro { get; set; } = null!;
         
         [Required]
-        public int IDAutor { get; set; }
+        public Autor IDAutor { get; set; }
         
         [Required]
         [Column(TypeName = "decimal(15,4)")]
